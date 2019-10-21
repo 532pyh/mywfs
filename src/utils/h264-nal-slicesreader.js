@@ -60,7 +60,7 @@ class SlicesReader extends EventHandler {
         if (lastNalEndPos != 0 && lastNalEndPos < typedAr.length) {
             this.lastBuf = typedAr.subarray(lastNalEndPos);
         } else {
-            if ( !! !this.lastBuf) {
+            if (!! !this.lastBuf) {
                 this.lastBuf = typedAr;
             }
             var _newBuf = new Uint8Array(this.lastBuf.length + buffer.byteLength);
@@ -70,15 +70,15 @@ class SlicesReader extends EventHandler {
         }
     }
 
-	onH264DataParsing(event) {
-		this._read(event.data);
-		var $this = this;
-		this.nals.forEach(function(nal) {
-			$this.wfs.trigger(Event.H264_DATA_PARSED, {
-				data: nal
-			});
-		});
-	}
+    onH264DataParsing(event) {
+        this._read(event.data);
+        var $this = this;
+        this.nals.forEach(function (nal) {
+            $this.wfs.trigger(Event.H264_DATA_PARSED, {
+                data: nal
+            });
+        });
+    }
 
 }
 

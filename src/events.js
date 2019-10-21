@@ -1,42 +1,42 @@
 module.exports = {
- 
-  MEDIA_ATTACHING: 'wfsMediaAttaching',  
- 
-  MEDIA_ATTACHED: 'wfsMediaAttached',
- 
-  FRAG_LOADING: 'wfsFragLoading',
 
-  BUFFER_CREATED: 'wfsBufferCreated', 
+    MEDIA_ATTACHING: 'wfsMediaAttaching',
 
-  BUFFER_APPENDING: 'wfsBufferAppending',
+    MEDIA_ATTACHED: 'wfsMediaAttached',
 
-  BUFFER_RESET: 'wfsBufferReset', 
+    FRAG_LOADING: 'wfsFragLoading',
 
-  FRAG_PARSING_DATA: 'wfsFragParsingData',
- 
-  FRAG_PARSING_INIT_SEGMENT: 'wfsFragParsingInitSegment',
-//------------------------------------------
-  H264_DATA_PARSING: 'wfsH264DataParsing',
+    BUFFER_CREATED: 'wfsBufferCreated',
 
-  H264_DATA_PARSED: 'wfsH264DataParsed',
-//------------------------------------------
-  WEBSOCKET_ATTACHED: 'wfsWebsocketAttached',
+    BUFFER_APPENDING: 'wfsBufferAppending',
 
-  WEBSOCKET_ATTACHING: 'wfsWebsocketAttaching',
+    BUFFER_RESET: 'wfsBufferReset',
 
-  WEBSOCKET_DATA_UPLOADING: 'wfsWebsocketDataUploading',
+    FRAG_PARSING_DATA: 'wfsFragParsingData',
 
-  WEBSOCKET_MESSAGE_SENDING: 'wfsWebsocketMessageSending',   
-//------------------------------------------
-  FILE_HEAD_LOADING: 'wfsFileHeadLoading',
+    FRAG_PARSING_INIT_SEGMENT: 'wfsFragParsingInitSegment',
+    //------------------------------------------
+    H264_DATA_PARSING: 'wfsH264DataParsing',
 
-  FILE_HEAD_LOADED: 'wfsFileHeadLoaded',
+    H264_DATA_PARSED: 'wfsH264DataParsed',
+    //------------------------------------------
+    WEBSOCKET_ATTACHED: 'wfsWebsocketAttached',
 
-  FILE_DATA_LOADING: 'wfsFileDataLoading',
+    WEBSOCKET_ATTACHING: 'wfsWebsocketAttaching',
 
-  FILE_DATA_LOADED: 'wfsFileDataLoaded',
+    WEBSOCKET_DATA_UPLOADING: 'wfsWebsocketDataUploading',
 
-  FILE_PARSING_DATA: 'wfsFileParsingData'
-//------------------------------------------
+    WEBSOCKET_MESSAGE_SENDING: 'wfsWebsocketMessageSending',
+    //------------------------------------------
+    FILE_HEAD_LOADING: 'wfsFileHeadLoading',
+
+    FILE_HEAD_LOADED: 'wfsFileHeadLoaded',
+
+    FILE_DATA_LOADING: 'wfsFileDataLoading',
+
+    FILE_DATA_LOADED: 'wfsFileDataLoaded',
+
+    FILE_PARSING_DATA: 'wfsFileParsingData'
+    //------------------------------------------
 
 };

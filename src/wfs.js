@@ -42,7 +42,7 @@ class Wfs {
                 fragLoadingMaxRetry: 6,
                 fragLoadingRetryDelay: 1000,
                 fragLoadingMaxRetryTimeout: 64000,
-                fragLoadingLoopThreshold: 3,
+                fragLoadingLoopThreshold: 1,
                 forceKeyFrameOnDiscontinuity: true,
                 appendErrorMaxRetry: 3
             };
@@ -89,10 +89,10 @@ class Wfs {
         this.websocketLoader.destroy();
     }
 
-    attachMedia(media, channelName = 'chX', mediaType = 'H264Raw', websocketName = 'play2') { // 'H264Raw' 'FMp4'    
+    attachMedia(media, channelName = 'chX', mediaType = 'H264Raw', websocketName = 'play2', websocketDomain) { // 'H264Raw' 'FMp4'    
         this.mediaType = mediaType;
         this.media = media;
-        this.trigger(Event.MEDIA_ATTACHING, { media: media, channelName: channelName, mediaType: mediaType, websocketName: websocketName });
+        this.trigger(Event.MEDIA_ATTACHING, { media: media, channelName: channelName, mediaType: mediaType, websocketName: websocketName, websocketDomain: websocketDomain });
     }
 
     attachWebsocket(websocket, channelName) {

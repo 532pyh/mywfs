@@ -31,7 +31,7 @@ class FlowController extends EventHandler {
 
     onMediaAttached(data) {
         if (data.websocketName != undefined) {
-            var client = new WebSocket('ws://' + window.location.host + '/' + data.websocketName);
+            var client = new WebSocket('ws://' + data.websocketDomain + '/' + data.websocketName);
             this.wfs.attachWebsocket(client, data.channelName);
         } else {
             console.log('websocketName ERROE!!!');

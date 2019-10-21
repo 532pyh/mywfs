@@ -45,7 +45,7 @@ class h264Demuxer extends EventHandler {
 
     onH264DataParsed(event) {
         this._parseAVCTrack(event.data);
-        if (this.browserType === 1 || this._avcTrack.samples.length >= 20) { // Firefox
+        if (this.browserType === 1 || this._avcTrack.samples.length > 0) { // Firefox
             this.remuxer.pushVideo(0, this.sn, this._avcTrack, this.timeOffset, this.contiguous);
             this.sn += 1;
         }

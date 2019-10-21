@@ -244,8 +244,9 @@ class MP4 {
         return MP4.box.apply(null, [MP4.types.mvex].concat(boxes));
     }
 
-    static mvhd(timescale, duration) {
-        duration *= timescale;
+    static mvhd(timescale) {
+        // duration *= timescale;
+        const duration = 0;
         var
             bytes = new Uint8Array([
                 0x00, // version 0
